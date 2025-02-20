@@ -1,0 +1,14 @@
+.button {
+  user-select: none;
+  cursor: pointer;
+  &:active {
+    scale: 0.99;
+    opacity: 0.95;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
