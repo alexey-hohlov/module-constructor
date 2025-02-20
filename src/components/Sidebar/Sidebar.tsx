@@ -51,14 +51,14 @@ const Sidebar: React.FC = () => {
         <h1 className='font-medium text-gray-500'>Ваши Модули</h1>
         <div className='flex items-center gap-2'>
           <SearchBar setQuery={handleSearch} />
-          <ImportButton />
           <Button
-            className='flex gap-1 items-center justify-center text-teal-600 bg-teal-600/15 h-full'
+            className='flex gap-1 items-center justify-center text-teal-600 bg-gray-100 h-full'
             disabled={!selectedModule}
             onClick={handleExport}
           >
-            <ExportIcon className='fill-teal-600 size-4' />
+            <ExportIcon className='fill-gray-500 size-4' />
           </Button>
+          <ImportButton />
         </div>
         <ul className='flex flex-col gap-2 h-full overflow-y-auto pr-4'>
           {filteredModules.map(id => (

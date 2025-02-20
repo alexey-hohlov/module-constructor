@@ -47,12 +47,12 @@ const ImportButton: React.FC = () => {
 
   return (
     <>
-      <label className='bg-gray-100 p-2 rounded-lg cursor-pointer'>
-        <ImportIcon className='fill-gray-500 size-4' />
+      <label className='bg-teal-600/15 p-2 rounded-lg cursor-pointer'>
+        <ImportIcon className='fill-teal-600 size-4' />
         <input type='file' className='hidden' onChange={handleImport} />
       </label>
       <Dialog isOpen={!!error} onClose={handleClose}>
-        <div className='flex flex-col gap-4 items-center justify-center' >
+        <div className='flex flex-col gap-4 items-center justify-center'>
           <h3 className='text-2xl font-bold text-red-400'>Ошибка</h3>
           <span className='text-center'>{error}</span>
         </div>
